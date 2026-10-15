@@ -58,7 +58,7 @@ window.SITE_DATA = {
     properties: [
         {
             id: "VP-101",
-            displayTitle: "3 BHK Luxury Villa in Sultanpur Highway, Lucknow at 72.50 L",
+            displayTitle: "3 BHK Luxury Villa, Sultanpur Highway at 72.50 L",
             displayPrice: "₹72.50 Lakh - 76 Lakh",
             strikePrice: "₹76.00 Lakh - 80 Lakh",
             title: "Shalimar Luxury Greens Villa & Residency",
@@ -81,7 +81,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-102",
-            displayTitle: "3 BHK Luxury Villa in Raebareli Road, Lucknow at 85 L",
+            displayTitle: "3 BHK Luxury Villa, Raebareli Road at 85 L",
             displayPrice: "₹85.00 Lakh - 90 Lakh",
             strikePrice: "₹89.00 Lakh - 95 Lakh",
             title: "Omaxe Metro City Luxury Villa",
@@ -104,7 +104,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-103",
-            displayTitle: "3 BHK High-Rise Flat in Gomti Nagar Extension, Lucknow at 1.20 Cr.",
+            displayTitle: "3 BHK High-Rise Flat, Gomti Nagar Extension at 1.20 Cr.",
             displayPrice: "₹1.20 Cr. - 1.35 Cr.",
             strikePrice: "₹1.25 Cr. - 1.42 Cr.",
             title: "Eldeco Solano High-Rise Residencies",
@@ -127,7 +127,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-104",
-            displayTitle: "LDA Approved Residential Plot in Kisan Path, Lucknow at 28.50 L",
+            displayTitle: "LDA Approved Residential Plot, Kisan Path at 28.50 L",
             displayPrice: "₹28.50 Lakh - 32 Lakh",
             strikePrice: "₹31.00 Lakh - 35 Lakh",
             title: "LDA Approved Premium Residential Plots",
@@ -150,7 +150,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-105",
-            displayTitle: "3 BHK Flat in Gomti Nagar Extension, Lucknow at 95 L - 1.10 Cr.",
+            displayTitle: "3 BHK Flat, Gomti Nagar Extension at 95 L - 1.10 Cr.",
             displayPrice: "₹95.00 Lakh - 1.10 Cr.",
             strikePrice: "₹1.00 Cr. - 1.15 Cr.",
             title: "Rishita Manhattan Luxury 3 BHK Apartments",
@@ -173,7 +173,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-106",
-            displayTitle: "Prime Commercial Retail Showroom in Faizabad Road, Lucknow at 1.45 Cr.",
+            displayTitle: "Prime Commercial Retail Showroom, Faizabad Road at 1.45 Cr.",
             displayPrice: "₹1.45 Cr. - 1.60 Cr.",
             strikePrice: "₹1.52 Cr. - 1.68 Cr.",
             title: "Prime Commercial Retail Showroom & Office Space",
@@ -196,7 +196,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-107",
-            displayTitle: "Gated Township Plots near Kisan Path Ring Road, Lucknow at 36 L",
+            displayTitle: "Gated Township Plots near Kisan Path Ring Road at 36 L",
             displayPrice: "₹36.00 Lakh - 42 Lakh",
             strikePrice: "₹39.00 Lakh - 45 Lakh",
             title: "Gated Township Plots near Kisan Path Ring Road",
@@ -219,7 +219,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-108",
-            displayTitle: "4 BHK Signature Duplex Villa in Vrindavan Yojna, Lucknow at 1.65 Cr.",
+            displayTitle: "4 BHK Signature Duplex Villa, Vrindavan Yojna at 1.65 Cr.",
             displayPrice: "₹1.65 Cr. - 1.85 Cr.",
             strikePrice: "₹1.75 Cr. - 1.95 Cr.",
             title: "Signature Duplex Designer Villa",
@@ -242,7 +242,7 @@ window.SITE_DATA = {
         },
         {
             id: "VP-109",
-            displayTitle: "Commercial Plot for Warehouse & Showroom in Sultanpur Highway at 88 L",
+            displayTitle: "Commercial Plot for Warehouse & Showroom, Sultanpur Highway at 88 L",
             displayPrice: "₹88.00 Lakh - 98 Lakh",
             strikePrice: "₹93.00 Lakh - 1.05 Cr.",
             title: "Commercial Plots for Warehouse & Showroom",
