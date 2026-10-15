@@ -2564,7 +2564,10 @@ label {
   z-index: 123;
 }
 .flat-slider.home-1 {
-  background-image: url(../images/slider/slider-1.jpg);
+  background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.42) 0%, rgba(15, 23, 42, 0.62) 100%), url(../images/slider/hero-modern-buildings.jpg) !important;
+  background-position: center right !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 .flat-slider.home-1 .overlay {
   background: #161e2d;
@@ -12355,3 +12358,77 @@ body {
 
 
 
+
+
+/* ========================================================
+   Mobile Floating Bottom Navigation Dock & Header Styling
+   ======================================================== */
+.mobile-floating-dock {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 75px !important;
+  }
+
+  .mobile-floating-dock {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 18px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: min(90%, 340px) !important;
+    height: 58px !important;
+    background: rgba(28, 28, 30, 0.85) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 999px !important;
+    z-index: 99999 !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38) !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    padding: 0 10px !important;
+  }
+
+  .mobile-floating-dock .dock-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+    opacity: 0.88;
+  }
+
+  .mobile-floating-dock .dock-btn:hover,
+  .mobile-floating-dock .dock-btn:active {
+    opacity: 1 !important;
+    transform: scale(1.12) !important;
+    color: #e5232a !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* Modern rounded hamburger button for mobile header */
+  .mobile-button {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 12px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    right: 15px !important;
+  }
+
+  .flat-slider.home-1 {
+    background-position: 75% center !important;
+    background-size: cover !important;
+  }
+}
