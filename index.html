@@ -83,10 +83,10 @@
                                             Sign in  
                                         </a>
                                         <div class="flat-bt-top">
-                                            <a class="tf-btn primary" href="contact.html">
-                                                <i class="icon icon-send"></i>
-                                                Get Consultation
-                                            </a>
+                                            <button type="button" class="tf-btn header-yt-btn hero-yt-play-trigger" id="headerYtPlayTrigger" aria-label="Watch Video Tour" title="Watch Video Tour">
+                                                <svg viewBox="0 0 68 48" width="22" height="15"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
+                                                <span>Watch Video Tour</span>
+                                            </button>
                                         </div>  
                                 </div>
                                     
@@ -107,7 +107,10 @@
                         <div class="bottom-canvas">
                             <div class="menu-outer"></div>
                             <div class="button-mobi-sell">
-                                <a class="tf-btn primary" href="contact.html">Get Consultation</a>
+                                <button type="button" class="tf-btn header-yt-btn hero-yt-play-trigger w-100" aria-label="Watch Video Tour">
+                                    <svg viewBox="0 0 68 48" width="22" height="15"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
+                                    <span>Watch Video Tour</span>
+                                </button>
                             </div> 
                             <div class="mobi-icon-box">
                                 <div class="box d-flex align-items-center">
@@ -136,6 +139,8 @@
                     <div class="row">    
                         <div class="col-lg-12">
                             <div class="slider-content">
+                                
+
                                 <div class="heading text-center">
                                     <h1 class="title-large text-white animationtext slide">
                                         Find Your
@@ -146,55 +151,94 @@
                                     </h1>
                                     <p class="subtitle text-white body-2 wow fadeInUp" data-wow-delay=".2s">We are a leading real estate consultancy firm in Lucknow helping you find verified residential and commercial properties, plots, apartments, and luxury villas.</p>
                                 </div>
-                                <div class="flat-tab flat-tab-form">
-                                    <ul class="nav-tab-form style-1 justify-content-center" role="tablist">
-                                        <li class="nav-tab-item" role="presentation">   
-                                            <a href="#forRent" class="nav-link-item active" data-bs-toggle="tab">Buy Property</a>
-                                        </li>
-                                        <li class="nav-tab-item" role="presentation">
-                                            <a href="#forSale" class="nav-link-item" data-bs-toggle="tab">Sell Property</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade active show" role="tabpanel">
-                                            <div class="form-sl">
-                                                <form action="sidebar-grid.html" method="get">
-                                                    <div class="wd-find-select">
-                                                        <div class="inner-group">
-                                                            <div class="form-group-1 search-form form-style">
-                                                                <label>Type</label>
-                                                                <div class="group-select">
-                                                                    <div class="nice-select" tabindex="0"><span class="current">All</span>
-                                                                        <ul class="list">  
-                                                                            <li data-value="" class="option selected">All</li>                                                        
-                                                                            <li data-value="villa" class="option">Villa</li>
-                                                                            <li data-value="studio" class="option">Plot</li>
-                                                                            <li data-value="office" class="option">Commercial</li>
-                                                                            <li data-value="house" class="option">Apartment</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div> 
-                                                            </div>
-                                                            <div class="form-group-2 form-style">
-                                                                <label>Location</label>
-                                                                <div class="group-ip">
-                                                                    <input type="text" class="form-control" placeholder="Sultanpur Highway, Kisan Path..." value="" name="s" title="Search for">
-                                                                    <a href="#" class="icon icon-location"></a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group-3 form-style">
-                                                                <label>Keyword</label>
-                                                                <input type="text" class="form-control" placeholder="Property / Landmark" value="" name="k" title="Search for">                                                   
-                                                            </div>
-                                                        </div>
-                                                        <div class="box-btn-advanced">
-                                                            <button type="submit" class="tf-btn btn-search primary">Find Properties <i class="icon icon-search"></i> </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                <div class="hero-search-unified-card wow fadeInUp" data-wow-delay=".3s">
+                                    <!-- Row 1: 4 Category Tabs Inside The Single Unified Card -->
+                                    <div class="hero-cat-grid" id="heroCatTabs">
+                                        <a href="search.html?type=commercial" class="hero-cat-box" data-cat="commercial" id="catTabCommercial">
+                                            <div class="hero-cat-icon-wrap">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                                </svg>
                                             </div>
-                                        </div>
+                                            <div class="hero-cat-text">
+                                                <span class="hero-cat-name">COMMERCIALS</span>
+                                                <span class="hero-cat-sub">Offices &amp; shops</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="search.html?type=flat" class="hero-cat-box active" data-cat="flat" id="catTabFlat">
+                                            <div class="hero-cat-icon-wrap">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                                                    <line x1="9" y1="6" x2="9" y2="6.01"></line>
+                                                    <line x1="15" y1="6" x2="15" y2="6.01"></line>
+                                                    <line x1="9" y1="10" x2="9" y2="10.01"></line>
+                                                    <line x1="15" y1="10" x2="15" y2="10.01"></line>
+                                                    <line x1="9" y1="14" x2="9" y2="14.01"></line>
+                                                    <line x1="15" y1="14" x2="15" y2="14.01"></line>
+                                                    <line x1="9" y1="18" x2="15" y2="18"></line>
+                                                </svg>
+                                            </div>
+                                            <div class="hero-cat-text">
+                                                <span class="hero-cat-name">FLATS</span>
+                                                <span class="hero-cat-sub">Apartments</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="search.html?type=villa" class="hero-cat-box" data-cat="villa" id="catTabVilla">
+                                            <div class="hero-cat-icon-wrap">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="hero-cat-text">
+                                                <span class="hero-cat-name">VILLAS</span>
+                                                <span class="hero-cat-sub">Independent homes</span>
+                                            </div>
+                                        </a>
+
+                                        <a href="search.html?type=plot" class="hero-cat-box" data-cat="plot" id="catTabPlot">
+                                            <div class="hero-cat-icon-wrap">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                                </svg>
+                                            </div>
+                                            <div class="hero-cat-text">
+                                                <span class="hero-cat-name">PLOTS</span>
+                                                <span class="hero-cat-sub">Land parcels</span>
+                                            </div>
+                                        </a>
                                     </div>
+
+                                    <!-- Row 2: Search Input & Action Buttons Inside Same Card -->
+                                    <form action="search.html" method="get" class="hero-unified-search-bar" id="heroSearchForm">
+                                        <input type="hidden" name="type" id="heroSearchTypeInput" value="flat">
+                                        <div class="hero-input-left">
+                                            <div class="hero-search-icon-circle">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                </svg>
+                                            </div>
+                                            <input type="text" name="q" id="heroSearchInput" class="hero-text-input" placeholder="Search Property or Developer" autocomplete="off">
+                                        </div>
+                                        <div class="hero-btn-group">
+                                            <button type="submit" class="hero-btn-submit" id="heroSearchBtn">
+                                                <span>Search</span>
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="hero-btn-yt hero-yt-play-trigger" id="heroYtPlayTrigger" aria-label="Watch Video Tour" title="Watch Video Tour">
+                                                <svg viewBox="0 0 68 48" width="18" height="13"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
+                                                <span>Video Tour</span>
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -1553,6 +1597,83 @@
     <script type="text/javascript" src="js/site-data.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/prop-parallax.js"></script>
+    <script type="text/javascript" src="js/advisor-chat.js"></script>
+    <script type="text/javascript" src="js/base-infra-search.js"></script>
+  
+    <!-- YouTube Video Modal Backdrop & Dialog -->
+    <div class="yt-video-modal-backdrop" id="ytVideoModal" style="display: none;">
+        <div class="yt-video-modal-dialog">
+            <button type="button" class="yt-modal-close" id="closeYtModalBtn" aria-label="Close Video">&times;</button>
+            <div class="yt-modal-video-container">
+                <iframe id="heroYtIframe" src="" title="Vishwas Property YouTube Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="yt-modal-footer">
+                <div class="yt-footer-info">
+                    <span class="yt-brand-title">Vishwas Property Lucknow</span>
+                    <span class="yt-sub-count">8.9K+ Subscribers • LDA &amp; RERA Approved Projects Tour</span>
+                </div>
+                <a href="https://youtube.com/@vishwasproperty_lucknow?si=uQG_UqWI5qKWuek3" target="_blank" rel="noopener noreferrer" class="yt-channel-btn">
+                    <svg viewBox="0 0 68 48" width="20" height="14"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FF0000"/><path d="M45 24L27 14v20" fill="#FFFFFF"/></svg>
+                    Subscribe YouTube Channel
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Property Advisor Trigger Button -->
+    <div class="advisor-floating-trigger" id="advisorChatTrigger" title="Aapke Property Guide - Chat Karein">
+        <div class="advisor-avatar-box">
+            <img src="images/avatar/advisor-circle.png" alt="Ankit Mishra - Property Guide" class="advisor-avatar-img">
+            <span class="advisor-status-dot" title="Online"></span>
+        </div>
+    </div>
+
+    <!-- Property Advisor Interactive Chat Widget -->
+    <div class="advisor-chat-widget" id="advisorChatWidget" style="display: none;">
+        <!-- Header -->
+        <div class="advisor-chat-header">
+            <div class="advisor-header-left">
+                <div class="advisor-header-avatar">
+                    <img src="images/avatar/advisor-circle.png" alt="Ankit Mishra">
+                    <span class="header-status-online"></span>
+                </div>
+                <div class="advisor-header-meta">
+                    <div class="advisor-name">Ankit Mishra</div>
+                    <div class="advisor-subtitle">Vishwas Property • Aapke property guide</div>
+                </div>
+            </div>
+            <div class="advisor-header-actions">
+                <button type="button" class="advisor-action-btn" id="advisorResetBtn" title="Restart conversation">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 4v6h-6"></path>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                </button>
+                <button type="button" class="advisor-action-btn" id="advisorCloseBtn" title="Close chat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Body -->
+        <div class="advisor-chat-body" id="advisorChatMessages">
+            <!-- Rendered by advisor-chat.js -->
+        </div>
+
+        <!-- Chat Footer Input -->
+        <div class="advisor-chat-footer">
+            <div class="advisor-input-wrapper">
+                <input type="text" id="advisorChatInput" placeholder="Upar ek option chunein..." autocomplete="off">
+                <button type="button" id="advisorChatSend" aria-label="Send message">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
   
 
     <!-- Floating Contact Buttons (WhatsApp & Call) -->

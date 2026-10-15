@@ -87,11 +87,9 @@
   /* Preloader
   -------------------------------------------------------------------------------------*/
   var preloader = function () {
-    setTimeout(function () {
-      $(".preload").fadeOut("slow", function () {
-        $(this).remove();
-      });
-    }, 200);
+    $(".preload").fadeOut(150, function () {
+      $(this).remove();
+    });
   };
 
   /* Show Pass
