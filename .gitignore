@@ -6,8 +6,10 @@ videos/
 
 # OS files
 Thumbs.db
+ehthumbs.db
 [Dd]esktop.ini
 .DS_Store
+$RECYCLE.BIN/
 
 # Backups & archives
 _assets_backup/
@@ -15,3 +17,15 @@ _assets_backup/
 *.tar.gz
 clean_export/
 .agent/
+
+# Temporary & Log files
+*.log
+*.tmp
+*.bak
+compress_images.ps1
+apply_user_updates.js
+update_contact.js
+
+# Editor directories
+.vscode/
+.idea/
