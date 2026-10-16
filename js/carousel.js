@@ -111,6 +111,34 @@ if ($(".tf-sw-location").length > 0) {
   });
 }
 
+if ($(".property-detail-banner-swiper").length > 0) {
+  var propDetailSwiper = new Swiper(".property-detail-banner-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    speed: 700,
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    navigation: {
+      nextEl: ".prop-banner-next",
+      prevEl: ".prop-banner-prev",
+    },
+    pagination: {
+      el: ".prop-banner-pagination",
+      clickable: true,
+    },
+    on: {
+      slideChange: function () {
+        var realIndex = this.realIndex + 1;
+        $("#propCurrentSlide").text(realIndex);
+      },
+    },
+  });
+}
+
 if ($(".tf-sw-latest").length > 0) {
   var preview = $(".tf-sw-latest").data("preview");
   var tablet = $(".tf-sw-latest").data("tablet");
