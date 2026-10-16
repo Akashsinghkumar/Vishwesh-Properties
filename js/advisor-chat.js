@@ -134,7 +134,7 @@
     function renderFinalRecommendation() {
         showTypingIndicator(function () {
             var $body = $("#advisorChatMessages");
-            var waMsg = "Namaste Ankit ji / Vishwas Property, mai Lucknow me " + (userResponses.propertyType || "property") + 
+            var waMsg = "Namaste Vishwas Property, mai Lucknow me " + (userResponses.propertyType || "property") + 
                         " dekh raha hu. Budget: " + (userResponses.budget || "Flexible") + 
                         ", Location: " + (userResponses.location || "Lucknow") + 
                         ". Kripya verified projects aur site visit details share karein.";
@@ -180,7 +180,7 @@
         scrollToBottom();
 
         showTypingIndicator(function () {
-            var waMsg = "Namaste Ankit ji / Vishwas Property, " + cleanText;
+            var waMsg = "Namaste Vishwas Property, " + cleanText;
             var waLink = "https://wa.me/918299667747?text=" + encodeURIComponent(waMsg);
 
             var replyHtml = `
