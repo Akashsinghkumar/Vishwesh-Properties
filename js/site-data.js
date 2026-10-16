@@ -59,8 +59,8 @@ window.SITE_DATA = {
         {
             id: "VP-101",
             displayTitle: "3 BHK Luxury Villa, Sultanpur Highway at 72.50 L",
-            displayPrice: "₹72.50 Lakh - 76 Lakh",
-            strikePrice: "₹76.00 Lakh - 80 Lakh",
+            displayPrice: "₹72.50 L - 76 L",
+            strikePrice: "₹76.00 L - 80 L",
             title: "Shalimar Luxury Greens Villa & Residency",
             category: "villa",
             tabCategory: "villa",
@@ -82,8 +82,8 @@ window.SITE_DATA = {
         {
             id: "VP-102",
             displayTitle: "3 BHK Luxury Villa, Raebareli Road at 85 L",
-            displayPrice: "₹85.00 Lakh - 90 Lakh",
-            strikePrice: "₹89.00 Lakh - 95 Lakh",
+            displayPrice: "₹85.00 L - 90 L",
+            strikePrice: "₹89.00 L - 95 L",
             title: "Omaxe Metro City Luxury Villa",
             category: "villa",
             tabCategory: "villa",
@@ -104,9 +104,9 @@ window.SITE_DATA = {
         },
         {
             id: "VP-103",
-            displayTitle: "3 BHK High-Rise Flat, Gomti Nagar Extension at 1.20 Cr.",
-            displayPrice: "₹1.20 Cr. - 1.35 Cr.",
-            strikePrice: "₹1.25 Cr. - 1.42 Cr.",
+            displayTitle: "3 BHK High-Rise Flat, Gomti Nagar Extension at 1.20 Cr",
+            displayPrice: "₹1.20 Cr - 1.35 Cr",
+            strikePrice: "₹1.25 Cr - 1.42 Cr",
             title: "Eldeco Solano High-Rise Residencies",
             category: "apartment",
             tabCategory: "house",
@@ -128,8 +128,8 @@ window.SITE_DATA = {
         {
             id: "VP-104",
             displayTitle: "LDA Approved Residential Plot, Kisan Path at 28.50 L",
-            displayPrice: "₹28.50 Lakh - 32 Lakh",
-            strikePrice: "₹31.00 Lakh - 35 Lakh",
+            displayPrice: "₹28.50 L - 32 L",
+            strikePrice: "₹31.00 L - 35 L",
             title: "LDA Approved Premium Residential Plots",
             category: "plot",
             tabCategory: "studio",
@@ -150,9 +150,9 @@ window.SITE_DATA = {
         },
         {
             id: "VP-105",
-            displayTitle: "3 BHK Flat, Gomti Nagar Extension at 95 L - 1.10 Cr.",
-            displayPrice: "₹95.00 Lakh - 1.10 Cr.",
-            strikePrice: "₹1.00 Cr. - 1.15 Cr.",
+            displayTitle: "3 BHK Flat, Gomti Nagar Extension at 95 L - 1.10 Cr",
+            displayPrice: "₹95.00 L - 1.10 Cr",
+            strikePrice: "₹1.00 Cr - 1.15 Cr",
             title: "Rishita Manhattan Luxury 3 BHK Apartments",
             category: "apartment",
             tabCategory: "house",
@@ -173,9 +173,9 @@ window.SITE_DATA = {
         },
         {
             id: "VP-106",
-            displayTitle: "Prime Commercial Retail Showroom, Faizabad Road at 1.45 Cr.",
-            displayPrice: "₹1.45 Cr. - 1.60 Cr.",
-            strikePrice: "₹1.52 Cr. - 1.68 Cr.",
+            displayTitle: "Prime Commercial Retail Showroom, Faizabad Road at 1.45 Cr",
+            displayPrice: "₹1.45 Cr - 1.60 Cr",
+            strikePrice: "₹1.52 Cr - 1.68 Cr",
             title: "Prime Commercial Retail Showroom & Office Space",
             category: "commercial",
             tabCategory: "villa",
@@ -197,8 +197,8 @@ window.SITE_DATA = {
         {
             id: "VP-107",
             displayTitle: "Gated Township Plots near Kisan Path Ring Road at 36 L",
-            displayPrice: "₹36.00 Lakh - 42 Lakh",
-            strikePrice: "₹39.00 Lakh - 45 Lakh",
+            displayPrice: "₹36.00 L - 42 L",
+            strikePrice: "₹39.00 L - 45 L",
             title: "Gated Township Plots near Kisan Path Ring Road",
             category: "plot",
             tabCategory: "studio",
@@ -219,9 +219,9 @@ window.SITE_DATA = {
         },
         {
             id: "VP-108",
-            displayTitle: "4 BHK Signature Duplex Villa, Vrindavan Yojna at 1.65 Cr.",
-            displayPrice: "₹1.65 Cr. - 1.85 Cr.",
-            strikePrice: "₹1.75 Cr. - 1.95 Cr.",
+            displayTitle: "4 BHK Signature Duplex Villa, Vrindavan Yojna at 1.65 Cr",
+            displayPrice: "₹1.65 Cr - 1.85 Cr",
+            strikePrice: "₹1.75 Cr - 1.95 Cr",
             title: "Signature Duplex Designer Villa",
             category: "villa",
             tabCategory: "villa",
@@ -243,8 +243,8 @@ window.SITE_DATA = {
         {
             id: "VP-109",
             displayTitle: "Commercial Plot for Warehouse & Showroom, Sultanpur Highway at 88 L",
-            displayPrice: "₹88.00 Lakh - 98 Lakh",
-            strikePrice: "₹93.00 Lakh - 1.05 Cr.",
+            displayPrice: "₹88.00 L - 98 L",
+            strikePrice: "₹93.00 L - 1.05 Cr",
             title: "Commercial Plots for Warehouse & Showroom",
             category: "commercial",
             tabCategory: "villa",
@@ -271,7 +271,7 @@ window.SITE_DATA = {
             name: "Ramesh Chandra Verma",
             role: "Senior Govt. Officer, Lucknow",
             review: "Buying our residential plot on Sultanpur Highway through Vishwas Property was the best decision. Their team verified all LDA land records, ensured clean registry, and made the whole process 100% stress-free.",
-            avatar: "images/avatar/avt-png1.png",
+            avatar: "images/avatar/testimonial-ramesh.jpg",
             rating: 5
         },
         {
@@ -279,7 +279,7 @@ window.SITE_DATA = {
             name: "Dr. Ananya Srivastava",
             role: "Consultant, Medanta Super-speciality, Lucknow",
             review: "Vishwas Property helped me find a ready-to-move luxury villa in Gomti Nagar Extension. Extremely transparent consultancy, honest pricing with zero hidden charges. Highly recommended for genuine properties!",
-            avatar: "images/avatar/avt-png2.png",
+            avatar: "images/avatar/testimonial-ananya.jpg",
             rating: 5
         },
         {
@@ -287,7 +287,7 @@ window.SITE_DATA = {
             name: "Pradeep Kumar Gupta",
             role: "Retail Business Owner, Lucknow",
             review: "I was looking for commercial investment near Kisan Path with high future appreciation. The Vishwas team provided an in-depth market analysis and guided me to the perfect commercial space. Exceptional advisory!",
-            avatar: "images/avatar/avt-png4.png",
+            avatar: "images/avatar/testimonial-pradeep.jpg",
             rating: 5
         },
         {
@@ -295,7 +295,7 @@ window.SITE_DATA = {
             name: "Vikramaditya Singh",
             role: "NRI Property Investor",
             review: "Being based outside Lucknow, I needed someone genuinely trustworthy on the ground. Vishwas Property handled end-to-end documentation, legal checks, and site inspections with total integrity. Truly lives up to 'Vishwas'.",
-            avatar: "images/avatar/avt-png7.png",
+            avatar: "images/avatar/testimonial-vikram.jpg",
             rating: 5
         },
         {
@@ -303,7 +303,7 @@ window.SITE_DATA = {
             name: "Sunil & Meera Mehrotra",
             role: "Residents, Aliganj Lucknow",
             review: "We sold our ancestral property and invested in a duplex villa on Shaheed Path with Vishwas Property. Their prompt communication, fair market valuation, and professional guidance saved us immense time and money.",
-            avatar: "images/avatar/avt-png8.png",
+            avatar: "images/avatar/testimonial-mehrotra.jpg",
             rating: 5
         }
     ],
@@ -319,7 +319,7 @@ window.SITE_DATA = {
         // Render card HTML for a property
         createPropertyCard: function (prop) {
             var titleText = prop.displayTitle || prop.title;
-            var priceText = prop.displayPrice || (prop.price + (prop.price.includes('Cr') || prop.price.includes('Lakh') ? '*' : ''));
+            var priceText = prop.displayPrice || prop.price;
             var strikeText = prop.strikePrice || '';
             var waMsg = encodeURIComponent("Hi Vishwas Property, I am interested in " + titleText + " (" + (prop.displayPrice || prop.price) + "). Please share details.");
 
@@ -347,8 +347,8 @@ window.SITE_DATA = {
                             '<span>' + prop.cityArea + '</span>' +
                         '</div>' +
                         '<div style="margin-top: 10px;">' +
-                            '<div style="font-size: 21px; font-weight: 800; color: #111827; line-height: 1.2;">' + priceText + '<sup>*</sup></div>' +
-                            (strikeText ? '<div style="font-size: 13px; color: #e5232a; text-decoration: line-through; margin-top: 2px; font-weight: 600;">' + strikeText + '<sup>*</sup></div>' : '') +
+                            '<div style="font-size: 21px; font-weight: 800; color: #111827; line-height: 1.2;">' + priceText + '</div>' +
+                            (strikeText ? '<div style="font-size: 13px; color: #e5232a; text-decoration: line-through; margin-top: 2px; font-weight: 600;">' + strikeText + '</div>' : '') +
                         '</div>' +
                         '<a href="https://wa.me/918299667747?text=' + waMsg + '" target="_blank" rel="noopener" class="prop-card-whatsapp-btn" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 44px; background: #008744; color: #ffffff; border-radius: 999px; font-weight: 700; text-decoration: none; margin-top: 14px; font-size: 15px; box-shadow: 0 4px 12px rgba(0, 135, 68, 0.22); transition: all 0.2s ease;" onmouseover="this.style.background=\'#007038\'; this.style.transform=\'translateY(-1px)\'" onmouseout="this.style.background=\'#008744\'; this.style.transform=\'none\'">' +
                             '<svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.214 8.214 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.188 8.188 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.11.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>' +
@@ -386,17 +386,17 @@ window.SITE_DATA = {
             }
 
             return '<div class="swiper-slide">' +
-                '<div class="box-tes-item">' +
-                    '<span class="icon icon-quote"></span>' +
-                    '<p class="note body-2">"' + tes.review + '"</p>' +
+                '<div class="box-tes-item" style="border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">' +
+                    '<span class="icon icon-quote" style="color: #e5232a; font-size: 40px; display: inline-block;"></span>' +
+                    '<p class="note body-2" style="font-size: 14.5px; line-height: 1.6; color: #374151; margin-top: 10px;">"' + tes.review + '"</p>' +
                     '<div class="box-avt d-flex align-items-center gap-12 mt-16">' +
-                        '<div class="avatar avt-60 round">' +
-                            '<img src="' + tes.avatar + '" alt="' + tes.name + '">' +
+                        '<div class="avatar avt-60 round" style="width: 54px; height: 54px; min-width: 54px; border-radius: 50%; overflow: hidden; border: 2.5px solid #e5232a; box-shadow: 0 4px 10px rgba(229, 35, 42, 0.18);">' +
+                            '<img src="' + tes.avatar + '" alt="' + tes.name + '" style="width: 100%; height: 100%; object-fit: cover; display: block;">' +
                         '</div>' +
                         '<div class="info">' +
-                            '<h6 class="name">' + tes.name + '</h6>' +
-                            '<p class="caption-2 text-variant-1 mt-4">' + tes.role + '</p>' +
-                            '<ul class="list-star d-flex gap-4 mt-6">' +
+                            '<h6 class="name" style="font-weight: 700; color: #111827; font-size: 15px; margin: 0;">' + tes.name + '</h6>' +
+                            '<p class="caption-2 text-variant-1 mt-2" style="font-size: 12.5px; color: #6b7280; margin: 0;">' + tes.role + '</p>' +
+                            '<ul class="list-star d-flex gap-4 mt-6" style="list-style: none; padding: 0; margin: 6px 0 0;">' +
                                 starsHtml +
                             '</ul>' +
                         '</div>' +
@@ -515,6 +515,10 @@ window.SITE_DATA = {
                 htmlTes += data.helpers.createTestimonialItem(tes);
             });
             testimonialWrapper.innerHTML = htmlTes;
+            var swEl = testimonialWrapper.closest('.swiper');
+            if (swEl && swEl.swiper) {
+                try { swEl.swiper.update(); } catch (e) {}
+            }
         }
 
         // 5. Populate services grid in our-service.html & index.html

@@ -25,6 +25,109 @@
     <link rel="shortcut icon" href="images/logo/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
 
+    <style>
+      .service-card-btn {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        width: 100% !important;
+        max-width: 210px !important;
+        height: 44px !important;
+        padding: 0 18px !important;
+        border-radius: 999px !important;
+        border: 1.5px solid #e5232a !important;
+        background-color: #ffffff !important;
+        color: #e5232a !important;
+        font-weight: 700 !important;
+        font-size: 14px !important;
+        text-decoration: none !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(229, 35, 42, 0.08);
+      }
+      .service-card-btn span {
+        color: inherit !important;
+        transition: color 0.3s ease;
+      }
+      .service-card-btn svg {
+        color: inherit !important;
+        stroke: currentColor !important;
+        transition: transform 0.3s ease, stroke 0.3s ease;
+        flex-shrink: 0;
+      }
+      .service-card-btn:hover,
+      .box-service:hover .service-card-btn {
+        background-color: #e5232a !important;
+        color: #ffffff !important;
+        border-color: #e5232a !important;
+        box-shadow: 0 6px 18px rgba(229, 35, 42, 0.35) !important;
+      }
+      .service-card-btn:hover span,
+      .box-service:hover .service-card-btn span {
+        color: #ffffff !important;
+      }
+      .service-card-btn:hover svg,
+      .box-service:hover .service-card-btn svg {
+        stroke: #ffffff !important;
+        transform: translateX(4px);
+      }
+      .box-service:hover .service-icon-wrap {
+        transform: scale(1.08) rotate(-4deg);
+      }
+      .service-icon-wrap {
+        transition: all 0.35s ease;
+      }
+      .btn-whatsapp-outline {
+        border: 1.5px solid #25D366 !important;
+        color: #128C7E !important;
+        background-color: #ffffff !important;
+        transition: all 0.3s ease !important;
+      }
+      .btn-whatsapp-outline:hover {
+        background-color: #25D366 !important;
+        color: #ffffff !important;
+        border-color: #25D366 !important;
+      }
+      .btn-whatsapp-outline:hover i {
+        color: #ffffff !important;
+      }
+      .service-desc-uniform {
+        font-size: 14px;
+        line-height: 1.65;
+        color: #4b5563;
+        text-align: center;
+        min-height: 68px;
+        margin-bottom: 0;
+      }
+      .service-feature-box {
+        background: #f8fafc;
+        border: 1px solid #eef2f6;
+        border-radius: 12px;
+        padding: 12px 14px;
+        margin: 16px 0 18px;
+        text-align: left;
+        min-height: 148px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+      }
+      .service-feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #334155;
+        line-height: 1.4;
+        text-align: left;
+      }
+      .service-feature-item svg {
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+    </style>
 </head>
 
 <body class="body">
@@ -75,12 +178,6 @@
                                     <!-- Main Menu End-->
                                 </div>
                                 <div class="inner-header-right header-account">
-                                        <a href="#modalLogin" data-bs-toggle="modal" class="tf-btn btn-line btn-login">
-                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.1251 5C13.1251 5.8288 12.7959 6.62366 12.2099 7.20971C11.6238 7.79576 10.8289 8.125 10.0001 8.125C9.17134 8.125 8.37649 7.79576 7.79043 7.20971C7.20438 6.62366 6.87514 5.8288 6.87514 5C6.87514 4.1712 7.20438 3.37634 7.79043 2.79029C8.37649 2.20424 9.17134 1.875 10.0001 1.875C10.8289 1.875 11.6238 2.20424 12.2099 2.79029C12.7959 3.37634 13.1251 4.1712 13.1251 5ZM3.75098 16.765C3.77776 15.1253 4.44792 13.5618 5.61696 12.4117C6.78599 11.2616 8.36022 10.6171 10.0001 10.6171C11.6401 10.6171 13.2143 11.2616 14.3833 12.4117C15.5524 13.5618 16.2225 15.1253 16.2493 16.765C14.2888 17.664 12.1569 18.1279 10.0001 18.125C7.77014 18.125 5.65348 17.6383 3.75098 16.765Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                            Sign in  
-                                        </a>
                                         <a href="contact.html" class="tf-btn btn-line btn-signup">Get Consultant</a>
                                         <div class="flat-bt-top" style="margin-left: 2px;">
                                             <button type="button" class="header-yt-icon-btn hero-yt-play-trigger" aria-label="Watch Video Tour on YouTube" title="Watch Video Tour">
@@ -162,7 +259,7 @@
                                 </p>
                                 <div class="d-flex flex-wrap gap-16 mt-4">
                                     <a href="contact.html" class="tf-btn primary">Speak With Our Advisors</a>
-                                    <a href="https://wa.me/918299667747" target="_blank" rel="noopener" class="tf-btn btn-line" style="border: 1px solid #25D366; color: #128C7E;">
+                                    <a href="https://wa.me/918299667747" target="_blank" rel="noopener" class="tf-btn btn-whatsapp-outline">
                                         <i class="icon icon-phone2"></i> WhatsApp Consultation
                                     </a>
                                 </div>
@@ -221,24 +318,42 @@
                         <div class="col-xl-3 col-md-6">
                             <div class="box-service" style="background: #ffffff; border: 1px solid #e9edf4; border-radius: 16px; padding: 28px 24px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 18px rgba(0,0,0,0.03);">
                                 <div>
-                                    <div class="image mb-4 text-center" style="background: rgba(229, 35, 42, 0.08); width: 68px; height: 68px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                                        <img class="lazyload" data-src="images/service/home-1.png" src="images/service/home-1.png" alt="Property Sales & Purchase" style="width: 36px; height: 36px;">
+                                    <div class="image mb-4 text-center service-icon-wrap" style="background: rgba(229, 35, 42, 0.08); width: 68px; height: 68px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e5232a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
+                                            <path d="M9 21V12h6v9"/>
+                                        </svg>
                                     </div>
                                     <div class="content">
                                         <h5 class="title text-center mb-3" style="font-size: 20px; font-weight: 700;">1. Property Sales & Purchase</h5>
-                                        <p class="description" style="text-align: justify; text-justify: inter-word; font-size: 14px; line-height: 1.7; color: #4b5563;">
-                                            Professional assistance for buying and selling residential and commercial properties, including plots, apartments, villas, and other real estate assets.
+                                        <p class="service-desc-uniform">
+                                            Professional assistance for buying and selling residential and commercial properties, including plots, apartments, villas, and other assets.
                                         </p>
-                                        <ul class="mt-3 mb-4" style="font-size: 13px; color: #374151; line-height: 1.8;">
-                                            <li>✔ Verified buyers & sellers</li>
-                                            <li>✔ Residential & commercial plots</li>
-                                            <li>✔ Apartments, kothis & villas</li>
-                                            <li>✔ Legal paperwork assistance</li>
-                                        </ul>
+                                        <div class="service-feature-box">
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Verified buyers & sellers</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Residential & commercial plots</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Apartments, kothis & villas</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Legal paperwork assistance</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="text-center pt-2" style="border-top: 1px dashed #e5e7eb;">
-                                    <a href="contact.html" class="tf-btn btn-line" style="font-weight: 700; color: #e5232a;">Inquire Now <span class="icon icon-arrow-right2"></span></a>
+                                <div class="text-center pt-3" style="border-top: 1px dashed #e5e7eb;">
+                                    <a href="contact.html" class="service-card-btn">
+                                        <span>Inquire Now</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -247,24 +362,42 @@
                         <div class="col-xl-3 col-md-6">
                             <div class="box-service" style="background: #ffffff; border: 1px solid #e9edf4; border-radius: 16px; padding: 28px 24px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 18px rgba(0,0,0,0.03);">
                                 <div>
-                                    <div class="image mb-4 text-center" style="background: rgba(37, 211, 102, 0.1); width: 68px; height: 68px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                                        <img class="lazyload" data-src="images/service/home-2.png" src="images/service/home-2.png" alt="Property Investment Advisory" style="width: 36px; height: 36px;">
+                                    <div class="image mb-4 text-center service-icon-wrap" style="background: rgba(37, 211, 102, 0.1); width: 68px; height: 68px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 7L13.5 15.5L8.5 10.5L2 17"/>
+                                            <polyline points="16 7 22 7 22 13"/>
+                                        </svg>
                                     </div>
                                     <div class="content">
                                         <h5 class="title text-center mb-3" style="font-size: 20px; font-weight: 700;">2. Property Investment Advisory</h5>
-                                        <p class="description" style="text-align: justify; text-justify: inter-word; font-size: 14px; line-height: 1.7; color: #4b5563;">
-                                            Guidance to identify suitable real estate investment opportunities based on location, budget, future growth potential, and investment objectives.
+                                        <p class="service-desc-uniform">
+                                            Guidance to identify suitable real estate investment opportunities based on location, budget, future growth potential, and goals.
                                         </p>
-                                        <ul class="mt-3 mb-4" style="font-size: 13px; color: #374151; line-height: 1.8;">
-                                            <li>✔ High ROI corridors in Lucknow</li>
-                                            <li>✔ Kisan Path & Sultanpur Highway focus</li>
-                                            <li>✔ Budget & growth potential analysis</li>
-                                            <li>✔ Future capital appreciation</li>
-                                        </ul>
+                                        <div class="service-feature-box">
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>High ROI corridors in Lucknow</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Kisan Path & Sultanpur Highway</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Budget & growth potential analysis</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Future capital appreciation</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="text-center pt-2" style="border-top: 1px dashed #e5e7eb;">
-                                    <a href="contact.html" class="tf-btn btn-line" style="font-weight: 700; color: #e5232a;">Get Advisory <span class="icon icon-arrow-right2"></span></a>
+                                <div class="text-center pt-3" style="border-top: 1px dashed #e5e7eb;">
+                                    <a href="contact.html" class="service-card-btn">
+                                        <span>Get Advisory</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -273,24 +406,43 @@
                         <div class="col-xl-3 col-md-6">
                             <div class="box-service" style="background: #ffffff; border: 1px solid #e9edf4; border-radius: 16px; padding: 28px 24px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 18px rgba(0,0,0,0.03);">
                                 <div>
-                                    <div class="image mb-4 text-center" style="background: rgba(245, 158, 11, 0.1); width: 68px; height: 68px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                                        <img class="lazyload" data-src="images/service/home-3.png" src="images/service/home-3.png" alt="Property Consultation" style="width: 36px; height: 36px;">
+                                    <div class="image mb-4 text-center service-icon-wrap" style="background: rgba(245, 158, 11, 0.1); width: 68px; height: 68px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                            <path d="M8 9h8"/>
+                                            <path d="M8 13h5"/>
+                                        </svg>
                                     </div>
                                     <div class="content">
                                         <h5 class="title text-center mb-3" style="font-size: 20px; font-weight: 700;">3. Property Consultation</h5>
-                                        <p class="description" style="text-align: justify; text-justify: inter-word; font-size: 14px; line-height: 1.7; color: #4b5563;">
-                                            End-to-end consultation to help clients evaluate properties, understand available options, and make informed real estate decisions.
+                                        <p class="service-desc-uniform">
+                                            End-to-end consultation to help clients evaluate properties, understand available options, and make confident real estate decisions.
                                         </p>
-                                        <ul class="mt-3 mb-4" style="font-size: 13px; color: #374151; line-height: 1.8;">
-                                            <li>✔ 1-on-1 personalized consultation</li>
-                                            <li>✔ Property valuation & site visits</li>
-                                            <li>✔ Genuine option comparison</li>
-                                            <li>✔ Transparent, honest guidance</li>
-                                        </ul>
+                                        <div class="service-feature-box">
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>1-on-1 personalized consultation</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Property valuation & site visits</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Genuine option comparison</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Transparent, honest guidance</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="text-center pt-2" style="border-top: 1px dashed #e5e7eb;">
-                                    <a href="contact.html" class="tf-btn btn-line" style="font-weight: 700; color: #e5232a;">Book Consultation <span class="icon icon-arrow-right2"></span></a>
+                                <div class="text-center pt-3" style="border-top: 1px dashed #e5e7eb;">
+                                    <a href="contact.html" class="service-card-btn">
+                                        <span>Book Consultation</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -299,24 +451,47 @@
                         <div class="col-xl-3 col-md-6">
                             <div class="box-service" style="background: #ffffff; border: 1px solid #e9edf4; border-radius: 16px; padding: 28px 24px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 18px rgba(0,0,0,0.03);">
                                 <div>
-                                    <div class="image mb-4 text-center" style="background: rgba(99, 102, 241, 0.1); width: 68px; height: 68px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
-                                        <img class="lazyload" data-src="images/service/home-1.png" src="images/service/home-1.png" alt="Residential & Commercial Properties" style="width: 36px; height: 36px;">
+                                    <div class="image mb-4 text-center service-icon-wrap" style="background: rgba(99, 102, 241, 0.1); width: 68px; height: 68px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="7" height="18" rx="1"/>
+                                            <rect x="14" y="9" width="7" height="12" rx="1"/>
+                                            <line x1="6.5" y1="7" x2="6.51" y2="7" stroke-width="2.5"/>
+                                            <line x1="6.5" y1="11" x2="6.51" y2="11" stroke-width="2.5"/>
+                                            <line x1="6.5" y1="15" x2="6.51" y2="15" stroke-width="2.5"/>
+                                            <line x1="17.5" y1="13" x2="17.51" y2="13" stroke-width="2.5"/>
+                                            <line x1="17.5" y1="17" x2="17.51" y2="17" stroke-width="2.5"/>
+                                        </svg>
                                     </div>
                                     <div class="content">
                                         <h5 class="title text-center mb-3" style="font-size: 20px; font-weight: 700;">4. Residential & Commercial Properties</h5>
-                                        <p class="description" style="text-align: justify; text-justify: inter-word; font-size: 14px; line-height: 1.7; color: #4b5563;">
-                                            Assistance in finding suitable residential and commercial properties across key locations of Lucknow.
+                                        <p class="service-desc-uniform">
+                                            Comprehensive assistance for finding, evaluating, and purchasing prime residential and commercial properties across key areas in Lucknow.
                                         </p>
-                                        <ul class="mt-3 mb-4" style="font-size: 13px; color: #374151; line-height: 1.8;">
-                                            <li>✔ Residential plots & villa communities</li>
-                                            <li>✔ Commercial plots & shop frontage</li>
-                                            <li>✔ Near Jalsa Resort & Kisan Path</li>
-                                            <li>✔ Seamless site inspection tours</li>
-                                        </ul>
+                                        <div class="service-feature-box">
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Residential plots & villa communities</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Commercial plots & shop frontage</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Near Jalsa Resort & Kisan Path</span>
+                                            </div>
+                                            <div class="service-feature-item">
+                                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                                <span>Seamless site inspection tours</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="text-center pt-2" style="border-top: 1px dashed #e5e7eb;">
-                                    <a href="sidebar-grid.html" class="tf-btn btn-line" style="font-weight: 700; color: #e5232a;">Explore Properties <span class="icon icon-arrow-right2"></span></a>
+                                <div class="text-center pt-3" style="border-top: 1px dashed #e5e7eb;">
+                                    <a href="sidebar-grid.html" class="service-card-btn">
+                                        <span>Explore Properties</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -581,154 +756,120 @@
             <!-- End partner -->
             <!-- Testimonial -->
             <section class="flat-section bg-primary-new flat-testimonial">
-                <div class="box-title px-15">
+                <div class="box-title px-15 wow fadeInUp">
                     <div class="text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                         <div class="text-subtitle text-primary">Our Testimonials</div>
                         <h3 class="title mt-4">What’s people say’s</h3>
                         <p class="desc text-variant-1">Our seasoned team excels in real estate with years of successful market navigation, offering informed decisions and optimal results.</p>
                     </div>
                 </div>        
-                <div dir="ltr" class="swiper tf-sw-testimonial" data-preview="4.5" data-tablet="2" data-mobile-sm="2" data-mobile="1" data-space="15" data-space-md="30" data-space-lg="30" data-centered="true" data-loop="true">
-                    <div class="swiper-wrapper">
+                <div dir="ltr" class="swiper tf-sw-testimonial wow fadeInUp" data-wow-delay=".2s" data-preview="4.5" data-tablet="2" data-mobile-sm="1" data-mobile="1" data-space="15" data-space-md="30" data-space-lg="30" data-centered="true" data-loop="true">
+                    <div class="swiper-wrapper" id="testimonialsDynamicWrapper">
                         <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <span class="icon icon-quote"></span>
-                                <p class="note body-2">
-                                    "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="images/avatar/avt-png1.png" alt="avatar">
+                            <div class="box-tes-item" style="border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <span class="icon icon-quote" style="color: #e5232a; font-size: 40px; display: inline-block;"></span>
+                                <p class="note body-2" style="font-size: 14.5px; line-height: 1.6; color: #374151; margin-top: 10px;">"Buying our residential plot on Sultanpur Highway through Vishwas Property was the best decision. Their team verified all LDA land records, ensured clean registry, and made the whole process 100% stress-free."</p>
+                                <div class="box-avt d-flex align-items-center gap-12 mt-16">
+                                    <div class="avatar avt-60 round" style="width: 54px; height: 54px; min-width: 54px; border-radius: 50%; overflow: hidden; border: 2.5px solid #e5232a; box-shadow: 0 4px 10px rgba(229, 35, 42, 0.18);">
+                                        <img src="images/avatar/testimonial-ramesh.jpg" alt="Ramesh Chandra Verma" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                                     </div>
                                     <div class="info">
-                                        <h6>Courtney Henry</h6>
-                                        <p class="caption-2 text-variant-1 mt-4">CEO Themesflat</p>
-                                        <ul class="list-star">
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
+                                        <h6 class="name" style="font-weight: 700; color: #111827; font-size: 15px; margin: 0;">Ramesh Chandra Verma</h6>
+                                        <p class="caption-2 text-variant-1 mt-2" style="font-size: 12.5px; color: #6b7280; margin: 0;">Senior Govt. Officer, Lucknow</p>
+                                        <ul class="list-star d-flex gap-4 mt-6" style="list-style: none; padding: 0; margin: 6px 0 0;">
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <span class="icon icon-quote"></span>
-                                <p class="note body-2">
-                                    "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="images/avatar/avt-png2.png" alt="avatar">
+                            <div class="box-tes-item" style="border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <span class="icon icon-quote" style="color: #e5232a; font-size: 40px; display: inline-block;"></span>
+                                <p class="note body-2" style="font-size: 14.5px; line-height: 1.6; color: #374151; margin-top: 10px;">"Vishwas Property helped me find a ready-to-move luxury villa in Gomti Nagar Extension. Extremely transparent consultancy, honest pricing with zero hidden charges. Highly recommended for genuine properties!"</p>
+                                <div class="box-avt d-flex align-items-center gap-12 mt-16">
+                                    <div class="avatar avt-60 round" style="width: 54px; height: 54px; min-width: 54px; border-radius: 50%; overflow: hidden; border: 2.5px solid #e5232a; box-shadow: 0 4px 10px rgba(229, 35, 42, 0.18);">
+                                        <img src="images/avatar/testimonial-ananya.jpg" alt="Dr. Ananya Srivastava" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                                     </div>
                                     <div class="info">
-                                        <h6>Esther Howard</h6>
-                                        <p class="caption-2 text-variant-1 mt-4">CEO Themesflat</p>
-                                        <ul class="list-star">
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
+                                        <h6 class="name" style="font-weight: 700; color: #111827; font-size: 15px; margin: 0;">Dr. Ananya Srivastava</h6>
+                                        <p class="caption-2 text-variant-1 mt-2" style="font-size: 12.5px; color: #6b7280; margin: 0;">Consultant, Medanta Super-speciality, Lucknow</p>
+                                        <ul class="list-star d-flex gap-4 mt-6" style="list-style: none; padding: 0; margin: 6px 0 0;">
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <span class="icon icon-quote"></span>
-                                <p class="note body-2">
-                                    "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="images/avatar/avt-png4.png" alt="avatar">
+                            <div class="box-tes-item" style="border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <span class="icon icon-quote" style="color: #e5232a; font-size: 40px; display: inline-block;"></span>
+                                <p class="note body-2" style="font-size: 14.5px; line-height: 1.6; color: #374151; margin-top: 10px;">"I was looking for commercial investment near Kisan Path with high future appreciation. The Vishwas team provided an in-depth market analysis and guided me to the perfect commercial space. Exceptional advisory!"</p>
+                                <div class="box-avt d-flex align-items-center gap-12 mt-16">
+                                    <div class="avatar avt-60 round" style="width: 54px; height: 54px; min-width: 54px; border-radius: 50%; overflow: hidden; border: 2.5px solid #e5232a; box-shadow: 0 4px 10px rgba(229, 35, 42, 0.18);">
+                                        <img src="images/avatar/testimonial-pradeep.jpg" alt="Pradeep Kumar Gupta" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                                     </div>
                                     <div class="info">
-                                        <h6>Annette Black</h6>
-                                        <p class="caption-2 text-variant-1 mt-4">CEO Themesflat</p>
-                                        <ul class="list-star">
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
+                                        <h6 class="name" style="font-weight: 700; color: #111827; font-size: 15px; margin: 0;">Pradeep Kumar Gupta</h6>
+                                        <p class="caption-2 text-variant-1 mt-2" style="font-size: 12.5px; color: #6b7280; margin: 0;">Retail Business Owner, Lucknow</p>
+                                        <ul class="list-star d-flex gap-4 mt-6" style="list-style: none; padding: 0; margin: 6px 0 0;">
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <span class="icon icon-quote"></span>
-                                <p class="note body-2">
-                                    "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="images/avatar/avt-png6.png" alt="avatar">
+                            <div class="box-tes-item" style="border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <span class="icon icon-quote" style="color: #e5232a; font-size: 40px; display: inline-block;"></span>
+                                <p class="note body-2" style="font-size: 14.5px; line-height: 1.6; color: #374151; margin-top: 10px;">"Being based outside Lucknow, I needed someone genuinely trustworthy on the ground. Vishwas Property handled end-to-end documentation, legal checks, and site inspections with total integrity. Truly lives up to 'Vishwas'."</p>
+                                <div class="box-avt d-flex align-items-center gap-12 mt-16">
+                                    <div class="avatar avt-60 round" style="width: 54px; height: 54px; min-width: 54px; border-radius: 50%; overflow: hidden; border: 2.5px solid #e5232a; box-shadow: 0 4px 10px rgba(229, 35, 42, 0.18);">
+                                        <img src="images/avatar/testimonial-vikram.jpg" alt="Vikramaditya Singh" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                                     </div>
                                     <div class="info">
-                                        <h6>Bessie Cooper</h6>
-                                        <p class="caption-2 text-variant-1 mt-4">CEO Themesflat</p>
-                                        <ul class="list-star">
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
+                                        <h6 class="name" style="font-weight: 700; color: #111827; font-size: 15px; margin: 0;">Vikramaditya Singh</h6>
+                                        <p class="caption-2 text-variant-1 mt-2" style="font-size: 12.5px; color: #6b7280; margin: 0;">NRI Property Investor</p>
+                                        <ul class="list-star d-flex gap-4 mt-6" style="list-style: none; padding: 0; margin: 6px 0 0;">
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <span class="icon icon-quote"></span>
-                                <p class="note body-2">
-                                    "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="images/avatar/avt-png3.png" alt="avatar">
+                            <div class="box-tes-item" style="border-radius: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <span class="icon icon-quote" style="color: #e5232a; font-size: 40px; display: inline-block;"></span>
+                                <p class="note body-2" style="font-size: 14.5px; line-height: 1.6; color: #374151; margin-top: 10px;">"We sold our ancestral property and invested in a duplex villa on Shaheed Path with Vishwas Property. Their prompt communication, fair market valuation, and professional guidance saved us immense time and money."</p>
+                                <div class="box-avt d-flex align-items-center gap-12 mt-16">
+                                    <div class="avatar avt-60 round" style="width: 54px; height: 54px; min-width: 54px; border-radius: 50%; overflow: hidden; border: 2.5px solid #e5232a; box-shadow: 0 4px 10px rgba(229, 35, 42, 0.18);">
+                                        <img src="images/avatar/testimonial-mehrotra.jpg" alt="Sunil & Meera Mehrotra" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                                     </div>
                                     <div class="info">
-                                        <h6>Courtney Henry</h6>
-                                        <p class="caption-2 text-variant-1 mt-4">CEO Themesflat</p>
-                                        <ul class="list-star">
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="box-tes-item wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">
-                                <span class="icon icon-quote"></span>
-                                <p class="note body-2">
-                                    "My experience with property management services has exceeded expectations. They efficiently manage properties with a professional and attentive approach in every situation. I feel reassured that any issue will be resolved promptly and effectively."
-                                </p>
-                                <div class="box-avt d-flex align-items-center gap-12">
-                                    <div class="avatar avt-60 round">
-                                        <img src="images/avatar/avt-png5.png" alt="avatar">
-                                    </div>
-                                    <div class="info">
-                                        <h6>Courtney Henry</h6>
-                                        <p class="caption-2 text-variant-1 mt-4">CEO Themesflat</p>
-                                        <ul class="list-star">
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
-                                            <li class="icon icon-star"></li>
+                                        <h6 class="name" style="font-weight: 700; color: #111827; font-size: 15px; margin: 0;">Sunil & Meera Mehrotra</h6>
+                                        <p class="caption-2 text-variant-1 mt-2" style="font-size: 12.5px; color: #6b7280; margin: 0;">Residents, Aliganj Lucknow</p>
+                                        <ul class="list-star d-flex gap-4 mt-6" style="list-style: none; padding: 0; margin: 6px 0 0;">
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
+                                            <li class="icon icon-star text-warning"></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -807,7 +948,7 @@
             </section>
             <!-- /faq -->
             <!-- banner -->
-            <section class="flat-section pt-0 flat-banner wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+            <section class="flat-section flat-banner wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms" style="padding-top: 50px; padding-bottom: 70px;">
                 <div class="container">
                     <div class="wrap-banner bg-primary-new" style="background: linear-gradient(135deg, #0e3b82 0%, #e5232a 100%);">
                         <div class="box-left">
@@ -1208,8 +1349,8 @@
     <div class="floating-contact-wrap">
         <a href="https://wa.me/918299667747?text=Hello%20Vishwas%20Property,%20I%20am%20interested%20in%20properties%20in%20Lucknow." target="_blank" rel="noopener noreferrer" class="floating-btn btn-whatsapp" title="Chat on WhatsApp">
             <span class="floating-tooltip">WhatsApp Us</span>
-            <svg width="28" height="28" viewBox="0 0 24 24">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.587 1.956.884 2.801.884l.001-.001c3.177 0 5.765-2.587 5.766-5.766 0-3.181-2.588-5.769-5.767-5.769zm10.218 5.768c-.002 5.641-4.587 10.225-10.228 10.225-1.728 0-3.418-.444-4.912-1.285l-5.609 1.47 1.498-5.467c-.927-1.554-1.417-3.344-1.416-5.178.002-5.64 4.587-10.225 10.228-10.225 2.732.001 5.3 1.065 7.231 2.997 1.932 1.932 2.995 4.5 2.996 7.238z"/>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.214 8.214 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.188 8.188 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.11.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
             </svg>
         </a>
         <a href="tel:8299667747" class="floating-btn btn-call" title="Call Us Directly">
