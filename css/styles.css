@@ -1947,9 +1947,18 @@ label {
   margin-bottom: 15px;
   border-bottom: 1px solid #e4e4e4;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.mobile-menu .button-mobi-sell a {
+.mobile-menu .button-mobi-sell a,
+.mobile-menu .button-mobi-sell button {
   width: 100%;
+  margin-bottom: 8px;
+}
+.mobile-menu .button-mobi-sell button:last-child,
+.mobile-menu .button-mobi-sell a:last-child {
+  margin-bottom: 0;
 }
 .mobile-menu .mobi-icon-box .box {
   margin-bottom: 19px;
@@ -1970,6 +1979,25 @@ label {
 .mobile-menu .mobi-icon-box .icon {
   margin-right: 10px;
   font-size: 20px;
+}
+.mobile-menu .mobi-icon-box .box > div,
+.mobile-menu .mobi-icon-box .box > div a,
+.mobile-menu .mobi-icon-box .box > .text-white {
+  color: #161e2d !important;
+}
+.mobile-menu .mobi-icon-box .box > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.mobile-menu .mobi-icon-box .box > .icon {
+  flex: 0 0 20px;
+}
+.mobile-menu-visible .mobile-floating-dock,
+.mobile-menu-visible .advisor-floating-trigger {
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .main-header .mobile-menu .menu-box .mCSB_scrollTools {
@@ -11964,13 +11992,14 @@ body {
   min-width: max-content !important;
 }
 
-/* Homelengo Sign in Button */
-.main-header .inner-header-right .btn-login {
+/* Homelengo Sign in & Sign up Buttons */
+.main-header .inner-header-right .btn-login,
+.main-header .inner-header-right .btn-signup {
   height: 44px !important;
   line-height: 44px !important;
-  padding: 0 20px !important;
+  padding: 0 18px !important;
   font-size: 14px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   border-radius: 30px !important;
   border: 1.5px solid #e5e7eb !important;
   color: #161e2d !important;
@@ -11983,20 +12012,44 @@ body {
   cursor: pointer !important;
 }
 
-.main-header .inner-header-right .btn-login svg {
+.main-header .inner-header-right .btn-login svg,
+.main-header .inner-header-right .btn-signup svg {
   display: inline-block !important;
   vertical-align: middle !important;
   transition: all 0.25s ease !important;
 }
 
-.main-header .inner-header-right .btn-login:hover {
+.main-header .inner-header-right .btn-login:hover,
+.main-header .inner-header-right .btn-signup:hover {
   border-color: #e5232a !important;
   color: #e5232a !important;
   background-color: rgba(229, 35, 42, 0.04) !important;
 }
 
-.main-header .inner-header-right .btn-login:hover svg path {
+.main-header .inner-header-right .btn-login:hover svg path,
+.main-header .inner-header-right .btn-signup:hover svg path {
   stroke: #e5232a !important;
+}
+
+.header-yt-icon-btn {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: #ff0000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 0;
+}
+
+.header-yt-icon-btn:hover {
+  transform: scale(1.08) !important;
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.45) !important;
 }
 
 /* Homelengo CTA Button */
@@ -12104,7 +12157,16 @@ body {
   .main-header .inner-header-right {
     flex: 1 1 auto !important;
     justify-content: flex-end !important;
-    margin-right: 15px !important;
+    min-width: 0 !important;
+    margin-right: 70px !important;
+    gap: 8px !important;
+  }
+  .main-header .inner-header-right .btn-signup {
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    padding: 0 12px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
   }
   .main-header .mobile-nav-toggler {
     display: flex !important;
@@ -12125,6 +12187,19 @@ body {
     max-height: 38px !important;
   }
   .main-header .inner-header-right .flat-bt-top {
+    display: none !important;
+  }
+  .main-header .inner-header-right {
+    margin-right: 64px !important;
+  }
+  .main-header .inner-header-right .btn-signup {
+    padding: 0 8px !important;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-header .inner-header-right .btn-signup {
     display: none !important;
   }
 }
@@ -12431,6 +12506,57 @@ body {
     background-position: 75% center !important;
     background-size: cover !important;
   }
+
+  /* Hide Get Consultant in mobile header */
+  .inner-header-right.header-account .btn-signup,
+  .inner-header-right .btn-signup,
+  header .btn-signup {
+    display: none !important;
+  }
+
+  /* Hide white contact and whatsapp section below footer in mobile view */
+  .floating-contact-wrap {
+    display: none !important;
+  }
+}
+
+/* Floating contact buttons desktop styling */
+.floating-contact-wrap {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.floating-contact-wrap .floating-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  position: relative;
+  text-decoration: none;
+}
+.floating-contact-wrap .floating-btn:hover {
+  transform: scale(1.08);
+}
+.floating-contact-wrap .btn-whatsapp {
+  background: #25d366;
+  fill: #ffffff;
+  color: #ffffff;
+}
+.floating-contact-wrap .btn-call {
+  background: #00875a;
+  fill: #ffffff;
+  color: #ffffff;
+}
+.floating-contact-wrap .floating-tooltip {
+  display: none;
 }
 
 /* ========================================================
@@ -13856,4 +13982,3 @@ body {
     font-size: 13px;
   }
 }
-

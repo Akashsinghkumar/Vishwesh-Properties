@@ -73,10 +73,10 @@
                                         </svg>
                                         Sign in
                                     </a>
-                                    <div class="flat-bt-top">
-                                        <button type="button" class="tf-btn header-yt-btn hero-yt-play-trigger" id="headerYtPlayTrigger" aria-label="Watch Video Tour" title="Watch Video Tour">
+                                    <a href="contact.html" class="tf-btn btn-line btn-signup">Get Consultant</a>
+                                    <div class="flat-bt-top" style="margin-left: 2px;">
+                                        <button type="button" class="header-yt-icon-btn hero-yt-play-trigger" id="headerYtPlayTrigger" aria-label="Watch Video Tour on YouTube" title="Watch Video Tour">
                                             <svg viewBox="0 0 68 48" width="22" height="15"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
-                                            <span>Watch Video Tour</span>
                                         </button>
                                     </div>
                                 </div>
@@ -95,6 +95,7 @@
                         <div class="bottom-canvas">
                             <div class="menu-outer"></div>
                             <div class="button-mobi-sell">
+                                <a class="tf-btn primary w-100" href="contact.html">Get Consultant</a>
                                 <button type="button" class="tf-btn header-yt-btn w-100 justify-content-center hero-yt-play-trigger" aria-label="Watch Video Tour">
                                     <svg viewBox="0 0 68 48" width="22" height="15"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
                                     <span>Watch Video Tour</span>
@@ -350,11 +351,35 @@
         </div>
     </div>
 
+    <!-- YouTube Video Modal Backdrop & Dialog -->
+    <div class="yt-video-modal-backdrop" id="ytVideoModal" style="display: none;">
+        <div class="yt-video-modal-dialog">
+            <button type="button" class="yt-modal-close" id="closeYtModalBtn" aria-label="Close Video">&times;</button>
+            <div class="yt-modal-video-container">
+                <iframe id="heroYtIframe" src="" title="Vishwas Property YouTube Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="yt-modal-footer">
+                <div class="yt-footer-info">
+                    <span class="yt-brand-title">Vishwas Property Lucknow</span>
+                    <span class="yt-sub-count">8.9K+ Subscribers • LDA &amp; RERA Approved Projects Tour</span>
+                </div>
+                <a href="https://youtube.com/@vishwasproperty_lucknow?si=uQG_UqWI5qKWuek3" target="_blank" rel="noopener noreferrer" class="yt-channel-btn">
+                    <svg viewBox="0 0 68 48" width="20" height="14"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FF0000"/><path d="M45 24L27 14v20" fill="#FFFFFF"/></svg>
+                    Subscribe YouTube Channel
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating Property Advisor Trigger Button -->
     <div class="advisor-floating-trigger" id="advisorChatTrigger" title="Aapke Property Guide - Chat Karein">
         <div class="advisor-avatar-box">
             <img src="images/avatar/advisor-circle.png" alt="Ankit Mishra - Property Guide" class="advisor-avatar-img">
             <span class="advisor-status-dot" title="Online"></span>
+        </div>
+        <div class="advisor-trigger-pill" style="background: #ffffff; color: #0f172a; padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 700; box-shadow: 0 4px 16px rgba(0,0,0,0.18); display: flex; align-items: center; gap: 7px; border: 1.5px solid #008744; white-space: nowrap;">
+            <span style="width: 8px; height: 8px; background: #008744; border-radius: 50%; display: inline-block;"></span>
+            <span>Property Advisor</span>
         </div>
     </div>
 
