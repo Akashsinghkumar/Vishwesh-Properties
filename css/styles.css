@@ -13982,3 +13982,24 @@ body {
     font-size: 13px;
   }
 }
+
+/* ========================================================
+   Header and Footer Logo - 2% Size Increase
+   ======================================================== */
+.logo-box .logo img,
+.main-header .logo img,
+.inner-header .logo img {
+  height: 49px !important;
+  max-height: 49px !important;
+  transform: scale(1.02) !important;
+  transform-origin: left center !important;
+}
+
+.footer-logo img,
+.top-footer .footer-logo img {
+  height: 49px !important;
+  max-height: 49px !important;
+  transform: scale(1.02) !important;
+  transform-origin: left center !important;
+}
+
