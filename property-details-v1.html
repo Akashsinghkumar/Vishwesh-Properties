@@ -78,9 +78,9 @@
                                 <div class="inner-header-right header-account">
                                         <a href="contact.html" class="tf-btn btn-line btn-signup">Get Consultant</a>
                                         <div class="flat-bt-top" style="margin-left: 2px;">
-                                            <button type="button" class="header-yt-icon-btn hero-yt-play-trigger" aria-label="Watch Video Tour on YouTube" title="Watch Video Tour">
+                                            <a href="https://youtube.com/@vishwasproperty_lucknow?si=uQG_UqWI5qKWuek3" target="_blank" rel="noopener noreferrer" class="header-yt-icon-btn" aria-label="Watch Video Tour on YouTube" title="Visit Vishwas Property YouTube Channel">
                                                 <svg viewBox="0 0 68 48" width="22" height="15"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
-                                            </button>
+                                            </a>
                                         </div>
                                 </div>
                                     
@@ -321,15 +321,30 @@
                                         <h5 class="title fw-6 mb-0">Property Video Tour</h5>
                                         <p class="caption text-variant-1 mt-4">Watch the actual project walkthrough & site tour video</p>
                                     </div>
-                                    <a href="videos/vishwash-property-video.mp4" data-fancybox="property-video" class="tf-btn style-border" style="padding: 6px 16px; font-size: 13px; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px;">
-                                        <i class="icon icon-expand"></i> Fullscreen Popup
+                                    <a href="https://www.youtube.com/watch?v=cIXxiFTtHmE" target="_blank" rel="noopener noreferrer" class="tf-btn" style="padding: 7px 18px; font-size: 13px; font-weight: 600; border-radius: 8px; display: inline-flex; align-items: center; gap: 8px; background: #FF0000; color: #ffffff; border: 1px solid #FF0000; box-shadow: 0 4px 12px rgba(255,0,0,0.25);">
+                                        <svg viewBox="0 0 68 48" width="18" height="13"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#FFFFFF"/><path d="M45 24L27 14v20" fill="#ff0000"/></svg>
+                                        <span>Watch on YouTube</span>
                                     </a>
                                 </div>
-                                <div class="img-video" style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); background: #000;">
-                                    <video id="propertyVideoPlayer" controls playsinline preload="metadata" poster="images/banner/img-video.jpg" style="width: 100%; height: auto; max-height: 480px; object-fit: contain; display: block; border-radius: 16px; margin: 0 auto; background: #000;">
-                                        <source src="videos/vishwash-property-video.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                <div class="img-video" id="propertyYtVideoBox" style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); background: #000; aspect-ratio: 16 / 9; max-height: 480px; width: 100%; cursor: pointer;">
+                                    <img src="images/banner/youtube-property-tour.jpg" alt="Vishwas Property - Lucknow Project Tour" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 16px;">
+                                    
+                                    <!-- Big YouTube Play Button -->
+                                    <button type="button" class="btn-video" aria-label="Play YouTube Video Tour" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 76px; height: 76px; border-radius: 50%; background: #ff0000; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(255,0,0,0.55); border: none; cursor: pointer; transition: transform 0.2s; z-index: 2;">
+                                        <svg viewBox="0 0 24 24" width="32" height="32" fill="#ffffff" style="margin-left: 3px;"><path d="M8 5v14l11-7z"/></svg>
+                                    </button>
+                                    
+                                    <!-- Bottom Info Overlay -->
+                                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 24px; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 60%, transparent 100%); display: flex; justify-content: space-between; align-items: flex-end; color: #fff; z-index: 1;">
+                                        <div>
+                                            <span style="background: #ff0000; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">YouTube Tour</span>
+                                            <h6 style="color: #fff; margin-top: 6px; margin-bottom: 2px; font-weight: 600; font-size: 15px;">Anaya Crown Park Lucknow | RERA Registered Plots on Highway</h6>
+                                            <span style="font-size: 12px; color: rgba(255,255,255,0.85);">Vishwas Property Official Project Walkthrough</span>
+                                        </div>
+                                        <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; font-size: 12px; font-weight: 600; background: rgba(255,255,255,0.22); backdrop-filter: blur(8px); border-radius: 6px; color: #fff; border: 1px solid rgba(255,255,255,0.35);">
+                                            <svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M8 5v14l11-7z"/></svg> Click to Play
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="single-property-element single-property-info">
@@ -750,7 +765,7 @@
                                     <path d="M6.99812 4.66567C5.71277 4.66567 4.66383 5.71463 4.66383 7C4.66383 8.28537 5.71277 9.33433 6.99812 9.33433C8.28346 9.33433 9.3324 8.28537 9.3324 7C9.3324 5.71463 8.28346 4.66567 6.99812 4.66567ZM13.9992 7C13.9992 6.03335 14.008 5.07545 13.9537 4.11055C13.8994 2.98979 13.6437 1.99512 12.8242 1.17556C12.0029 0.35426 11.01 0.100338 9.88927 0.0460516C8.92263 -0.00823506 7.96475 0.000520879 6.99987 0.000520879C6.03323 0.000520879 5.07536 -0.00823506 4.11047 0.0460516C2.98973 0.100338 1.99508 0.356011 1.17554 1.17556C0.354253 1.99687 0.100336 2.98979 0.0460508 4.11055C-0.00823491 5.0772 0.00052087 6.0351 0.00052087 7C0.00052087 7.9649 -0.00823491 8.92455 0.0460508 9.88945C0.100336 11.0102 0.356004 12.0049 1.17554 12.8244C1.99683 13.6457 2.98973 13.8997 4.11047 13.9539C5.07711 14.0082 6.03499 13.9995 6.99987 13.9995C7.9665 13.9995 8.92438 14.0082 9.88927 13.9539C11.01 13.8997 12.0047 13.644 12.8242 12.8244C13.6455 12.0031 13.8994 11.0102 13.9537 9.88945C14.0097 8.92455 13.9992 7.96665 13.9992 7ZM6.99812 10.5917C5.01056 10.5917 3.40651 8.98759 3.40651 7C3.40651 5.01241 5.01056 3.40832 6.99812 3.40832C8.98567 3.40832 10.5897 5.01241 10.5897 7C10.5897 8.98759 8.98567 10.5917 6.99812 10.5917ZM10.7368 4.10004C10.2728 4.10004 9.89802 3.72529 9.89802 3.26122C9.89802 2.79716 10.2728 2.42241 10.7368 2.42241C11.2009 2.42241 11.5756 2.79716 11.5756 3.26122C11.5758 3.37142 11.5542 3.48056 11.5121 3.58239C11.47 3.68422 11.4082 3.77675 11.3303 3.85467C11.2523 3.93258 11.1598 3.99437 11.058 4.03647C10.9562 4.07858 10.847 4.10018 10.7368 4.10004Z" fill="white"/>
                                 </svg>
                             </a></li>
-                            <li><a href="https://youtube.com/@vishwasproperty_lucknow" target="_blank" rel="noopener" class="box-icon w-40 social" aria-label="YouTube">
+                            <li><a href="https://youtube.com/@vishwasproperty_lucknow?si=uQG_UqWI5qKWuek3" target="_blank" rel="noopener" class="box-icon w-40 social" aria-label="YouTube">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.6657 1.76024C15.4817 1.06737 14.9395 0.521689 14.2511 0.336504C13.0033 0 8 0 8 0C8 0 2.99669 0 1.7489 0.336504C1.06052 0.521718 0.518349 1.06737 0.334336 1.76024C0 3.01611 0 5.63636 0 5.63636C0 5.63636 0 8.25661 0.334336 9.51248C0.518349 10.2053 1.06052 10.7283 1.7489 10.9135C2.99669 11.25 8 11.25 8 11.25C8 11.25 13.0033 11.25 14.2511 10.9135C14.9395 10.7283 15.4817 10.2053 15.6657 9.51248C16 8.25661 16 5.63636 16 5.63636C16 5.63636 16 3.01611 15.6657 1.76024ZM6.36363 8.01535V3.25737L10.5454 5.63642L6.36363 8.01535Z" fill="white"/>
                                 </svg>
@@ -1007,6 +1022,17 @@
     <script type="text/javascript" src="js/site-data.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/advisor-chat.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var box = document.getElementById('propertyYtVideoBox');
+            if (box) {
+                box.addEventListener('click', function() {
+                    if (box.querySelector('iframe')) return;
+                    box.innerHTML = '<iframe src="https://www.youtube.com/embed/cIXxiFTtHmE?autoplay=1&rel=0" title="Vishwas Property Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 100%; border: 0; display: block; border-radius: 16px;"></iframe>';
+                });
+            }
+        });
+    </script>
 
     <!-- YouTube Video Modal Backdrop & Dialog -->
     <div class="yt-video-modal-backdrop" id="ytVideoModal" style="display: none;">

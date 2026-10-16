@@ -5,8 +5,8 @@
     "use strict";
 
     // --- 1. HERO YOUTUBE VIDEO MODAL LOGIC ---
-    // Vishwas Property YouTube Tour Video (Lucknow Greens Township / Sultanpur Highway)
-    var defaultYtVideoId = "fjBuybKFWvg";
+    // Vishwas Property YouTube Tour Video (Anaya Crown Park Lucknow / Sultanpur Highway)
+    var defaultYtVideoId = "cIXxiFTtHmE";
     var ytEmbedUrl = "https://www.youtube-nocookie.com/embed/" + defaultYtVideoId + "?autoplay=1&rel=0";
 
     function initHeroYoutubeModal() {
